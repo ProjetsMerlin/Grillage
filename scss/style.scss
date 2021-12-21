@@ -6,93 +6,14 @@
   box-sizing: border-box;
 }
 
+/* example */
 body {
   overflow-x: hidden;
+  background: yellow;
 }
 
-.container {
-  margin: 0px auto;
-  width: 530px;
-}
-
-.yourElement {
-  margin: 36px auto;
-  width: 530px;
-  height: 420px;
-}
-
-.grillage_row {
-  display: flex;
-
-  >div {
-    height: calc(420px/3);
-    background-image: url(https://unsplash.it/g/530/420);
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-
-    background-color: black;
-    background-repeat: no-repeat;
-  }
-}
-
-.grillage {
+.new {
   display: block;
-  
-  &:hover .grillage_row>div{
-    border-color: white;
-    border-style: solid;
-    border-width: 0px;
-    cursor: pointer;
-  }
-}
-
-/* ROWS */
-.grillage_child_1 {
-  width: 50%;
-  height: calc(420px/3);
-}
-
-.grillage_child_2 {
-  width: 25%;
-}
-
-.grillage_child_3 {
-  width: 33.33%;
-}
-
-/* COLUMNS */
-.grillage_col_1 {
-  background-position: 0% top;
-}
-
-.grillage_col_2 {
-  background-position: 100% top;
-}
-
-.grillage_col_3 {
-  background-position: 0% center;
-}
-.grillage_col_4 {
-  background-position: 33.33% center;
-}
-
-.grillage_col_5 {
-  background-position: 66.66% center;
-}
-
-.grillage_col_6 {
-  background-position: 100% center;
-}
-
-.grillage_col_7 {
-  background-position: 0% bottom;
-}
-
-.grillage_col_8 {
-  background-position: 50% bottom;
-}
-
-.grillage_col_9 {
-  background-position: 100% bottom;
+  margin: 0px auto;
+  width: 420px;
 }

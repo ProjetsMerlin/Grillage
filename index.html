@@ -4,35 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Grillage js</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <div class="container">
-    <a class="yourElement grillage">
-      <div class="grillage_row">
-        <div class="grillage_child_1 grillage_col_1"></div>
-        <div class="grillage_child_1 grillage_col_2"></div>
-      </div>
-      <div class="grillage_row">
-        <div class="grillage_child_2 grillage_col_3"></div>
-        <div class="grillage_child_2 grillage_col_4"></div>
-        <div class="grillage_child_2 grillage_col_5"></div>
-        <div class="grillage_child_2 grillage_col_6"></div>
-      </div>
-      <div class="grillage_row">
-        <div class="grillage_child_3 grillage_col_7"></div>
-        <div class="grillage_child_3 grillage_col_8"></div>
-        <div class="grillage_child_3 grillage_col_9"></div>
-      </div>
+    <a href="img/320.jpg" class="new">
+      <img src="img/420.jpeg" alt="">
     </a>
-    <div class="container">
-      <div class="new">
-        <img src="https://unsplash.it/g/530/420" alt="">
-      </div>
-    </div>
   </div>
-  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="js/script.js"></script><footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $('.new').grillage({
+      borderColor: "yellow",
+      borderSize: "3px",
+      hoverEffect: "animate__shakeX",
+      structure : [
+      [33.33,33.33,33.33],
+      [20,20,30,30],
+      [20,50,20,10],
+      ],
+    });
+  </script>
 </body>
 </html>
