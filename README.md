@@ -1,7 +1,6 @@
-#Introduction
+## Introduction
 
-Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteurs, pour donner un effet de grille. Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple.
-
+Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteur, pour donner un effet de grille. Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple.
 
 
 ## How To Use
@@ -53,6 +52,7 @@ Created by https://lintermediaire.be
 
 ## Related
 
+[https://jquery.com/download/] (https://jquery.com/download/) : dependencies
 [animated.css](https://github.com/amitmerchant1990/markdownify-web) if you want a classes
 
 
