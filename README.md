@@ -1,7 +1,15 @@
+#Introduction
+
+Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteurs, pour donner un effet de grille. Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple.
+
+
+
 ## How To Use
 
-Wrapper votre image à l'aide de votre balise html favorite et donnez lui une classe.
-Appliquez ensuite la fonction de grillage à l'aide de jQuery
+1. Wrap your image with an html element
+2. import jQuery
+3. import grillage js
+4. Aplly grillage & grillage options
 
 
 ```bash
@@ -35,7 +43,7 @@ Appliquez ensuite la fonction de grillage à l'aide de jQuery
 
 ## Download
 
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0)
+You can [download](https://projetsmerlin.github.io/grillage/)
 
 
 ## Credits
