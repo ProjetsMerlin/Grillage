@@ -18,7 +18,7 @@ Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteu
 <img src="your-image?jpg" />
 </div>
 
-# 2. add grillage Js
+# 2. add jQuery
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 # 3. add grillage Js
