@@ -42,7 +42,8 @@ Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteu
 
 ## Download
 
-You can [download](https://projetsmerlin.github.io/grillage/)
+You can [preview grillage js there](https://projetsmerlin.github.io/grillage/)
+You can [download grillage js there](https://github.com/ProjetsMerlin/grillage/archive/refs/heads/master.zip)
 
 
 ## Credits
