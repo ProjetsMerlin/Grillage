@@ -8,32 +8,17 @@ Grillage js décompose une image en plusieurs éléments HTML pour lui donner un
 
 You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
 
-
-### Example
-
+### How TO USE
 1. Wrap your image with an html element
 2. Import jQuery
 3. Import Grillage js
 4. Aplly Grillage on your element
-5. Apply options of Grillage
+5. Apply options if you want
 
 
+### Example
 ```bash
-
-# 1. Your code with grillage
-<div class="test">
-<img src="your-image?jpg" />
-</div>
-
-# 2. add jQuery
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-# 3. add grillage Js
-<script src="js/grillage.js"></script>
- 
-# 4 & 5. add your option configuration
-  <script>
-    $('.test').grillage({
+    $('.yourElement').grillage({
       borderColor: "yellow",
       borderSize: 3,
       hoverEffect: "animate__shakeX",
@@ -43,7 +28,6 @@ You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
       [20,50,20,10],
       ],
     });
-  </script>
 ```
 
 ### Settings
@@ -53,12 +37,7 @@ Option | Type | Default | Description
 borderColor | string | '#ffffff' | Color of borders
 borderSize | int | 3 | width of borders
 hoverEffect | string | 'animate__fadeIn' | Classe of animate css for hover effect
-
-structure | array | [
-      [15,15,50,20],
-      [20,20,30,30],
-      [20,70,10],
-      ], | Structure of grid. An array for each rows. Each values must be eqal to 100
+structure | array | [ [15,15,50,20],[20,20,30,30],[20,70,10],] | Structure of grid. An array for each rows. Each values must be equal to 100% for a perfect design
 
 ### Download
 
@@ -72,7 +51,7 @@ Created by https://lintermediaire.be - 28/12/2021
 
 #### Dependencies
 
-jQuery 3.6.0 - [https://jquery.com/download/] (https://jquery.com/download/)
+jQuery 3.6.0 - [https://jquery.com/download/](https://jquery.com/download/)
 
 
 #### Related
