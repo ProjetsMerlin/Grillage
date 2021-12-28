@@ -1,14 +1,21 @@
-## Introduction
+Grillade JS
+-------
 
-Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteur, pour donner un effet de grille. Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple.
+Grillage js décompose une image en plusieurs éléments HTML pour lui donner un effet de grille ou de quadrillage (sur 3 lignes en hauteur). Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple ou de transition au survol de la souris
 
 
-## How To Use
+### Demo
+
+You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
+
+
+### Example
 
 1. Wrap your image with an html element
-2. import jQuery
-3. import grillage js
-4. Aplly grillage & grillage options
+2. Import jQuery
+3. Import Grillage js
+4. Aplly Grillage on your element
+5. Apply options of Grillage
 
 
 ```bash
@@ -24,11 +31,11 @@ Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteu
 # 3. add grillage Js
 <script src="js/grillage.js"></script>
  
-# 4. add your option configuration
+# 4 & 5. add your option configuration
   <script>
     $('.test').grillage({
       borderColor: "yellow",
-      borderSize: "3px",
+      borderSize: 3,
       hoverEffect: "animate__shakeX",
       structure : [
       [33.33,33.33,33.33],
@@ -39,25 +46,40 @@ Grillage js décompose une image en plusieurs colonnes et sur 3 lignes en hauteu
   </script>
 ```
 
+### Settings
 
-## Download
+Option | Type | Default | Description
+------ | ---- | ------- | -----------
+borderColor | string | '#ffffff' | Color of borders
+borderSize | int | 3 | width of borders
+hoverEffect | string | 'animate__fadeIn' | Classe of animate css for hover effect
 
-You can [preview grillage js there](https://projetsmerlin.github.io/grillage/)
-You can [download grillage js there](https://github.com/ProjetsMerlin/grillage/archive/refs/heads/master.zip)
+structure | array | [
+      [15,15,50,20],
+      [20,20,30,30],
+      [20,70,10],
+      ], | Structure of grid. An array for each rows. Each values must be eqal to 100
+
+### Download
+
+You can [download Grillage js there](https://github.com/ProjetsMerlin/grillage/archive/refs/heads/master.zip)
 
 
-## Credits
+### Credits
 
-Created by https://lintermediaire.be
-
-
-## Related
-
-[https://jquery.com/download/] (https://jquery.com/download/) : dependencies
-[animated.css](https://github.com/amitmerchant1990/markdownify-web) if you want a classes
+Created by https://lintermediaire.be - 28/12/2021
 
 
-## License
+#### Dependencies
+
+jQuery 3.6.0 - [https://jquery.com/download/] (https://jquery.com/download/)
+
+
+#### Related
+[animated.css](https://github.com/amitmerchant1990/markdownify-web) for a lot css animation
+
+
+### License
 
 FREE
 

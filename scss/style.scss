@@ -1,3 +1,7 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+/* STRUCTURE */
 *,
 *::after,
 *::before {
@@ -6,13 +10,54 @@
   box-sizing: border-box;
 }
 
-/* example */
 body {
+  font-family: sans-serif;
   overflow-x: hidden;
-  background: yellow;
 }
 
-.new {
+.container {
+  margin: 0px auto;
+  padding: 12px;
+  max-width: 640px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+
+@media screen and (min-width: 768px) {
+  .flex {flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    margin: 24px auto 48px;
+    width: 768px;
+  }
+}
+
+/* TEXT */
+h1,
+h2,
+strong {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+/* IMAGE */
+.image {
   display: block;
   margin: 0px auto;
   width: 420px;

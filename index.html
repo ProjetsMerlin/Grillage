@@ -5,31 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Grillage js</title>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <div class="container center">
+    <h1>Grillage js</h1>
+    <p>Grillage js décompose une image en plusieurs éléments HTML pour lui donner un effet de grille ou de quadrillage (sur 3 lignes en hauteur). Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple ou de transition au survol de la souris</p>
+  </div>
+  <div class="flex">
+    <div class="container">
+      <a href="img/tag.jpg" class="image tag">
+        <img src="img/tag.jpg" alt="">
+      </a>
+    </div>
+    <div class="container">
+      <h2>Default</h2>
+      <code>
+        $('.tag').grillage();
+      </code>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="container">
+      <h2>Options Example</h2>
+      <code>
+        $('.vanGogh').grillage({<br>
+        structure : [<br>
+        [50,50],<br>
+        [25,25,25,25],<br>
+        [33.33,33.33,33.33],<br>
+        ],<br>
+        hoverEffect : 'animate__fadeIn',<br>
+        borderColor : 'red',<br>
+        borderSize : 4,<br>
+      });
+    </code>
+  </div>
   <div class="container">
-    <a href="img/320.jpg" class="new">
-      <img src="img/320.jpg" alt="">
+    <a href="img/vanGogh.jpg" class="image vanGogh">
+      <img src="img/vanGogh.jpg" alt="">
     </a>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/grillage.js"></script>
-  <script>
-    $('.new').grillage({
-      borderColor: "yellow",
-      borderSize: "3px",
-      hoverEffect: "animate__shakeX",
-      structure : [
-      [33.33,33.33,33.33],
-      [20,20,30,30],
-      [20,50,20,10],
-      ],
-    });
-  </script>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/grillage.js"></script>
+<script>
+  $('.tag').grillage();
+  $('.vanGogh').grillage({
+    structure : [
+    [50,50],
+    [25,25,25,25],
+    [33.33,33.33,33.33],
+    ],
+    hoverEffect : 'animate__rubberBand',
+    borderColor : '##1b2c9a',
+    borderSize : 4,
+  });
+</script>
 </body>
 </html>
