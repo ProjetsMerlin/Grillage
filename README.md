@@ -17,6 +17,20 @@ You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
 
 
 ### Example
+
+### CSS
+```bash
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+```
+
+#### SCRIPT
+```bash
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/grillage.js"></script>
+```
+
+#### grillage
+
 ```bash
     $('.yourElement').grillage({
       borderColor: "yellow",
