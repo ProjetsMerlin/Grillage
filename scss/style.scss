@@ -16,9 +16,12 @@ body {
 }
 
 .container {
-  margin: 0px auto;
-  padding: 12px;
-  max-width: 640px;
+  margin: 24px;
+  max-width: 768px;
+
+  &--auto {
+    margin: 24px auto;
+  }
 }
 
 .flex {
@@ -33,6 +36,12 @@ body {
   -webkit-align-items: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+
+  &--reverse {
+    flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+  }
 }
 
 
