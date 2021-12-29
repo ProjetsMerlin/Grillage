@@ -52,6 +52,11 @@ strong {
   font-family: 'Catamaran', sans-serif;
 }
 
+p {
+  font-size: .9em;
+  line-height: 150%;
+}
+
 .center {
   text-align: center;
 }
@@ -60,5 +65,22 @@ strong {
 .image {
   display: block;
   margin: 0px auto;
-  width: 420px;
+  width: 100%;
+
+  div & {
+    width: 420px;
+  }
 }
+
+/*
+@-webkit-keyframes opacity {
+  0%   { opacity: .2; }
+  100% { opacity: 1; }
+}
+
+.grillage__item--Hover {
+  opacity: 1;
+  animation-name: opacity;
+  animation-duration: 1s;
+}
+ */

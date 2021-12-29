@@ -2,17 +2,18 @@
   $.fn.grillage=function(options) {
 
     /* PARAMETERS */
-    var defauts = {
+    var defaults = {
       'structure' : [
       [15,15,50,20],
       [20,20,30,30],
       [20,70,10],
       ],
-      'hoverEffect' : 'animate__fadeIn',
+      'classe' : 'grillage__item',
+      'hoverEffect' : 'grillage__item--hover',
       'borderColor' : '#ffffff',
       'borderSize' : 3,
     };
-    var parametres = $.extend(defauts, options);
+    var parametres = $.extend(defaults, options);
 
     return this.each(function(index) {
 
@@ -60,7 +61,7 @@
       $element.addClass('grillage_'+classe);
 
       for (let i = 0; i < rowsCount; i++) {
-        $('.grillage_'+classe).append('<div id="grillage_row_'+(i+1)+'" class="grillage_row" />');
+        $element.append('<div id="grillage_row_'+(i+1)+'" class="grillage_row" />');
 
         backgroundPositionX = backgroundPositionX.concat(calcPosition(parametres.structure[i]));
 
@@ -96,9 +97,9 @@
          borderWidth: parametres.borderSize+'px',
          borderStyle: 'solid',
          borderColor: parametres.borderColor,
-       }).on('click mouseover', function() {
-        $('.grillage_col').removeClass('animate__animated ' + parametres.hoverEffect);
-        $(this).addClass('animate__animated ' + parametres.hoverEffect);
+       }).addClass(parametres.classe).on('click mouseover', function() {
+        $('.grillage_col').removeClass(parametres.hoverEffect);
+        $(this).addClass(parametres.hoverEffect);
         $(this).css('cursor','pointer');
       });
      });
