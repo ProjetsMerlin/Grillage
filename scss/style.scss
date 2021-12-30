@@ -47,7 +47,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 840px) {
   .flex {flex-direction: row;
     -webkit-flex-direction: row;
@@ -87,6 +86,15 @@ textarea {
   width: 100%;
 
   div & {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 840px) {
+/* EXAMPLE */
+.image {
+  div & {
     width: 420px;
   }
+}
 }
