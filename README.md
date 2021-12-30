@@ -39,7 +39,7 @@ You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
       [20,50,20,10],
       ],
       classe : 'grillage__item'
-      hoverEffect: "grillage__item--hover",
+      classHover: "grillage__item--hover",
       borderColor: "yellow",
       borderSize: 3,
     });
@@ -51,7 +51,7 @@ Option | Type | Default | Description
 ------ | ---- | ------- | -----------
 structure | array | [ [15,15,50,20],[20,20,30,30],[20,70,10],] | Structure of grid. An array for each rows. Each values must be equal to 100% for a perfect design
 classe | string | 'grillage__item' | name of your classe
-hoverEffect | string | 'grillage__item--hover' | Classe of animate css for hover effect
+classHover | string | 'grillage__item--hover' | Classe of animate css for hover effect
 borderColor | string | '#ffffff' | Color of borders
 borderSize | int | 3 | width of borders
 

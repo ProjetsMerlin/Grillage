@@ -23,27 +23,43 @@
     </div>
     <div class="container">
       <h2>Default</h2>
-      <code>
-        $('.tag').grillage();
-      </code>
+      <textarea style="height: 210px;" disabled>
+//html
+
+<a href="img/tag.jpg" class="image tag">
+  <img src="img/tag.jpg">
+</a>
+
+
+//javascript
+
+$('.tag').grillage();
+      </textarea>
     </div>
   </div>
+
   <div class="flex flex--reverse">
     <div class="container">
-      <h2>Options Example</h2>
-      <code>
-        $('.vanGogh').grillage({<br>
-        structure : [<br>
-        [50,50],<br>
-        [25,25,25,25],<br>
-        [33.33,33.33,33.33],<br>
-        ],<br>
-        classe : 'gogh',<br>
-        hoverEffect : 'animate__animated animate__rubberBand',<br>
-        borderColor : '#1b2c9a',<br>
-        borderSize : 4,<br>
-      });
-    </code>
+      <h2>Options Example with animate css</h2>
+      <textarea  disabled>
+//css
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+// javascript
+
+$('.vanGogh').grillage({
+  structure : [
+  [50,50],
+  [25,25,25,25],
+  [33.33,33.33,33.33],
+  ],
+  classe : 'gogh',
+  classHover : 'animate__animated animate__rubberBand',
+  borderColor : '#1b2c9a',
+  borderSize : 4,
+});
+    </textarea>
   </div>
   <div class="container">
     <a href="img/vanGogh.jpg" class="image vanGogh">
@@ -51,7 +67,7 @@
     </a>
   </div>
 </div>
-<div class="center">
+<div class="container container--auto center">
   <a href="https://github.com/ProjetsMerlin/grillage/archive/refs/heads/master.zip">Download</a> -  <a href="https://github.com/ProjetsMerlin/grillage">Github</a> - created by <a href="https://lintermediaire.be">https://lintermediaire.be</a>
 </div>
 </body>
@@ -66,7 +82,7 @@
     [33.33,33.33,33.33],
     ],
     classe : 'gogh',
-    hoverEffect : 'animate__animated animate__rubberBand',
+    classHover : 'animate__animated animate__rubberBand',
     borderColor : '#1b2c9a',
     borderSize : 4,
   });
