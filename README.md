@@ -1,12 +1,12 @@
 Grillade JS
 -------
 
-Grillage js décompose une image en plusieurs éléments HTML pour lui donner un effet de grille ou de quadrillage (sur 3 lignes en hauteur). Il est ensuite possible d'appliquer une classe de son choix sur chacun des ses éléments pour leur attribuer un effet d'animation par exemple ou de transition au survol de la souris
+Grillage js décompose une image en plusieurs éléments HTML pour lui donner un effet de grille ou de quadrillage (sur 3 lignes en hauteur). Il est ensuite possible d'appliquer une classe de son choix sur chacun des éléments pour leur attribuer un effet d'animation par exemple ou de transition lorsqu'on les survoles
 
 
 ### Demo
 
-You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
+You can preview Grillage js [there](https://projetsmerlin.github.io/grillage/)
 
 ### How TO USE
 1. Wrap your image with an html element
@@ -18,18 +18,18 @@ You can [preview Grillage js there](https://projetsmerlin.github.io/grillage/)
 
 ### Example
 
-### CSS (no required)
+#### CSS (no required)
 ```bash
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 ```
 
-#### SCRIPT
+#### SCRIPTS
 ```bash
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/grillage.js"></script>
 ```
 
-#### grillage
+#### Grillage js
 
 ```bash
     $('.yourElement').grillage({
@@ -57,20 +57,20 @@ borderSize | int | 3 | width of borders
 
 ### Download
 
-You can [download Grillage js there](https://github.com/ProjetsMerlin/grillage/archive/refs/heads/master.zip)
+You can download Grillage js [there](https://github.com/ProjetsMerlin/grillage/archive/refs/heads/master.zip)
 
 
 ### Credits
 
-Created by https://lintermediaire.be - 28/12/2021
+Created by https://lintermediaire.be - 12/2021
 
 
-#### Dependencies
+### Dependencies
 
 jQuery 3.6.0 - [https://jquery.com/download/](https://jquery.com/download/)
 
 
-#### Related
+### Related
 [animated.css](https://github.com/amitmerchant1990/markdownify-web) for a lot css animation
 
 
