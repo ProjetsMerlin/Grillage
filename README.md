@@ -1,7 +1,7 @@
 Grillade JS
 -------
 
-Grillage js décompose une image en plusieurs éléments HTML pour lui donner un effet de grille ou de quadrillage (sur 3 lignes en hauteur). Il est ensuite possible d'appliquer une classe de son choix sur chacun des éléments pour leur attribuer un effet d'animation par exemple ou de transition lorsqu'on les survoles
+Grillage js décompose une image en plusieurs éléments HTML pour lui donner un effet de grille ou de quadrillage (sur 3 lignes en hauteur). Il est ensuite possible d'appliquer une classe de son choix sur chacun des éléments pour leur attribuer un effet d'animation par exemple ou de transition lorsqu'on les survole.
 
 
 ### Demo
