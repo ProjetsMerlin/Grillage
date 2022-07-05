@@ -6,7 +6,7 @@ Grillage js décompose une image en plusieurs éléments HTML pour lui donner un
 
 ### Demo
 
-You can preview Grillage js [there](https://projetsmerlin.github.io/grillage/)
+You can preview Grillage js [there](https://projetsmerlin.github.io/Grillage/)
 
 ### How TO USE
 1. Wrap your image with an html element
